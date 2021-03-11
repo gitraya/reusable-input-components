@@ -1,4 +1,4 @@
-<h1 align="center">Reusable button component</h1>
+<h1 align="center">Reusable input component</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -6,15 +6,15 @@
 
 <div align="center">
   <h3>
-    <a href="https://gitraya.github.io/reusable-button-components/">
+    <a href="https://gitraya.github.io/reusable-input-components/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/gitraya/reusable-button-components">
+    <a href="https://github.com/gitraya/reusable-input-components">
       Solution
     </a>
     <span> | </span>
-    <a href="https://devchallenges.io/challenges/ohgVTyJCbm5OZyTB2gNY">
+    <a href="https://devchallenges.io/challenges/TSqutYM4c5WtluM7QzGp">
       Challenge
     </a>
   </h3>
@@ -30,7 +30,7 @@
 
 ## Overview
 
-![screenshot](https://github.com/gitraya/reusable-button-components/blob/main/public/images/overviewbuttoncomponents.png)
+![screenshot](https://github.com/gitraya/reusable-input-components/blob/main/public/images/overviewinputcomponents.png)
 
 ## Built With
 
@@ -41,7 +41,7 @@
 
 ## Features
 
-This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/ohgVTyJCbm5OZyTB2gNY) was to build an application to complete the given user stories.
+This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/TSqutYM4c5WtluM7QzGp) was to build an application to complete the given user stories.
 
 ## How To Use
 
@@ -49,7 +49,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/gitraya/reusable-button-components.git
+$ git clone https://github.com/gitraya/reusable-input-components.git
 # Install dependencies
 $ npm install
 
