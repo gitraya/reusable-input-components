@@ -1,5 +1,5 @@
-import { useState } from 'react';
 import './Input.css';
+import { useState } from 'react';
 
 const Input = ({
   inputId,
@@ -17,10 +17,10 @@ const Input = ({
   const [state, setstate] = useState({
     value: value,
   });
-  let controlClass = `input-control ${error ? 'error' : ''} ${
+  const controlClass = `input-control ${error ? 'error' : ''} ${
     startIcon ? 'input-icon' : ''
   } ${fullWidth ? 'fullWidth' : ''}`;
-  let iconClass = `icon ${startIcon ? 'startIcon' : ''} ${
+  const iconClass = `icon ${startIcon ? 'startIcon' : ''} ${
     endIcon ? 'endIcon' : ''
   }`;
 
