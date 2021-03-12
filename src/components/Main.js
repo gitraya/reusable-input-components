@@ -7,55 +7,35 @@ const Main = (text) => {
       <div className="demo-container">
         <div className="demo-item">
           <small>{(text = '<Input />')}</small>
-          <Input label="Label" placeholder="Placeholder" inputId="demo" />
+          <Input label="Label" placeholder="Placeholder" id="demo" />
         </div>
         <div className="demo-item">
           <small className="cl-hover">{(text = '&:hover')}</small>
-          <Input label="Label" placeholder="Placeholder" inputId="demo1" />
+          <Input label="Label" placeholder="Placeholder" id="demo1" />
         </div>
         <div className="demo-item">
           <small className="cl-hover">{(text = '&:focus')}</small>
-          <Input label="Label" placeholder="Placeholder" inputId="demo2" />
+          <Input label="Label" placeholder="Placeholder" id="demo2" />
         </div>
       </div>
       <div className="demo-container">
         <div className="demo-item">
           <small>{(text = '<Input error />')}</small>
-          <Input
-            label="Label"
-            placeholder="Placeholder"
-            inputId="demo3"
-            error
-          />
+          <Input label="Label" placeholder="Placeholder" id="demo3" error />
         </div>
         <div className="demo-item">
           <small className="cl-hover">{(text = '&:hover')}</small>
-          <Input
-            label="Label"
-            placeholder="Placeholder"
-            inputId="demo4"
-            error
-          />
+          <Input label="Label" placeholder="Placeholder" id="demo4" error />
         </div>
         <div className="demo-item">
           <small className="cl-hover">{(text = '&:focus')}</small>
-          <Input
-            label="Label"
-            placeholder="Placeholder"
-            inputId="demo5"
-            error
-          />
+          <Input label="Label" placeholder="Placeholder" id="demo5" error />
         </div>
       </div>
       <div className="demo-container">
         <div className="demo-item">
           <small>{(text = '<Input disabled />')}</small>
-          <Input
-            label="Label"
-            placeholder="Placeholder"
-            inputId="demo6"
-            disabled
-          />
+          <Input label="Label" placeholder="Placeholder" id="demo6" disabled />
         </div>
       </div>
       <div className="demo-container">
@@ -66,7 +46,7 @@ const Main = (text) => {
           <Input
             label="Label"
             placeholder="Placeholder"
-            inputId="demo7"
+            id="demo7"
             helperText="Some interesting text"
           />
         </div>
@@ -77,7 +57,7 @@ const Main = (text) => {
           <Input
             label="Label"
             placeholder="Placeholder"
-            inputId="demo8"
+            id="demo8"
             helperText="Some interesting text"
             error
           />
@@ -89,7 +69,7 @@ const Main = (text) => {
           <Input
             label="Label"
             placeholder="Placeholder"
-            inputId="demo9"
+            id="demo9"
             startIcon={<i class="material-icons">local_phone</i>}
           />
         </div>
@@ -98,9 +78,8 @@ const Main = (text) => {
           <Input
             label="Label"
             placeholder="Placeholder"
-            inputId="demo10"
+            id="demo10"
             endIcon={<i class="material-icons">lock</i>}
-            error
           />
         </div>
       </div>
@@ -110,7 +89,7 @@ const Main = (text) => {
           <Input
             label="Label"
             placeholder="Placeholder"
-            inputId="demo11"
+            id="demo11"
             value="Text"
           />
         </div>
@@ -121,7 +100,7 @@ const Main = (text) => {
           <Input
             label="Label"
             placeholder="Placeholder"
-            inputId="demo12"
+            id="demo12"
             size="sm"
           />
         </div>
@@ -130,7 +109,7 @@ const Main = (text) => {
           <Input
             label="Label"
             placeholder="Placeholder"
-            inputId="demo13"
+            id="demo13"
             size="md"
           />
         </div>
@@ -141,13 +120,24 @@ const Main = (text) => {
           <Input
             label="Label"
             placeholder="Placeholder"
-            inputId="demo14"
+            id="demo14"
             value="Text"
             fullWidth
           />
         </div>
       </div>
-      <Input />
+      <div className="demo-container">
+        <div className="demo-item full">
+          <small>{(text = '<Input multiline row=”4” />')}</small>
+          <Input
+            label="Label"
+            placeholder="Placeholder"
+            id="demo15"
+            multiline
+            row="4"
+          />
+        </div>
+      </div>
     </main>
   );
 };
