@@ -4,7 +4,7 @@ const Footer = () => {
       <small className="copyright">
         created by
         <b>
-          <a href="https://github.com/gitraya" target="_blank">
+          <a href="https://github.com/gitraya" target="_blank" rel="noreferrer">
             gitraya
           </a>
         </b>

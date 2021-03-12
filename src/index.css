@@ -48,6 +48,29 @@ main {
   font-size: 1.5rem;
 }
 
+/* Main content style */
+.demo-container {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 0;
+}
+
+.demo-item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5rem;
+}
+
+.demo-item.full {
+  width: 100%;
+  margin-right: 0;
+}
+
+small {
+  font-family: var(--ubuntu-mono);
+  margin: 0.5rem 0;
+}
+
 /* Footer styling */
 footer {
   display: flex;

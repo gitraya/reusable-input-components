@@ -1,18 +1,34 @@
+import { useState } from 'react';
 import './Input.css';
 
 const Input = ({
-  size,
   inputId,
+  label,
+  value,
   placeholder,
-  error,
   disabled,
+  size,
+  error,
   helperText,
   fullWidth,
+  startIcon,
+  endIcon,
 }) => {
-  let inputClass = `input ${error ? 'error' : ''} ${
-    fullWidth ? 'fullWidth' : ''
+  const [state, setstate] = useState({
+    value: value,
+  });
+  let controlClass = `input-control ${error ? 'error' : ''} ${
+    startIcon ? 'input-icon' : ''
+  } ${fullWidth ? 'fullWidth' : ''}`;
+  let iconClass = `icon ${startIcon ? 'startIcon' : ''} ${
+    endIcon ? 'endIcon' : ''
   }`;
-  let labelClass = `label`;
+
+  function onValueChange(value) {
+    setstate({
+      value: value,
+    });
+  }
 
   switch (size) {
     case 'sm':
@@ -21,29 +37,36 @@ const Input = ({
     case 'md':
       size = { padding: '18px 12px', width: '200px' };
       break;
+    default:
+      size = { padding: '18px 12px', width: '200px' };
+      break;
   }
 
   return (
-    <div className="input-control">
-      <label className={labelClass} htmlFor={inputId}>
-        Label
+    <div className={controlClass}>
+      <label className="label" htmlFor={inputId}>
+        {label}
       </label>
       <div className="input-wrap">
+        <i className={iconClass}>{startIcon}</i>
         <input
-          className={inputClass}
-          style={size}
-          placeholder={placeholder}
           id={inputId}
+          value={state.value}
+          placeholder={placeholder}
           disabled={disabled}
+          className="input"
+          style={size}
+          onChange={(e) => onValueChange(e.target.value)}
         />
+        <i className={iconClass}>{endIcon}</i>
       </div>
       <small className="helperText">{helperText}</small>
     </div>
   );
 };
 
-Input.defaultProps = {
-  size: 'md',
-};
+// Input.defaultProps = {
+//   size: 'md',
+// };
 
 export default Input;
